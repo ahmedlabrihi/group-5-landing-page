@@ -19,10 +19,45 @@ function App() {
       />
       <Workflow />
       <Features />
-      <TextReveal
-        text="Our commitment to excellence ensures every laptop receives thorough diagnostics, professional repairs, and quality assurance testing before return to service."
-        className="my-32"
-      />
+
+      {/* Extended scroll section for commitment text */}
+      <section className="py-32 px-4 relative bg-gradient-to-b from-transparent via-orange-950/5 to-transparent">
+        <div className="max-w-4xl mx-auto space-y-64">
+
+          {/* Spacer with decorative element */}
+          <div className="text-center">
+            <div className="w-px h-32 bg-gradient-to-b from-transparent via-orange-500/30 to-transparent mx-auto" />
+          </div>
+
+          <TextReveal
+            text="Our commitment to excellence ensures every laptop receives thorough diagnostics, professional repairs, and quality assurance testing before return to service."
+            className=""
+          />
+
+          {/* Additional commitment points */}
+          <TextReveal
+            text="From hardware failures to software corruption, our certified technicians diagnose and resolve issues with precision and care."
+            className=""
+          />
+
+          <TextReveal
+            text="We believe in transparent communication, keeping you informed at every step of the repair process."
+            className=""
+          />
+
+          <TextReveal
+            text="Quality is not just a goal — it's our standard. Every device undergoes rigorous testing before leaving our facility."
+            className=""
+          />
+
+          {/* Spacer with decorative element */}
+          <div className="text-center">
+            <div className="w-px h-32 bg-gradient-to-b from-transparent via-orange-500/30 to-transparent mx-auto" />
+          </div>
+
+        </div>
+      </section>
+
       <Team />
       <Footer />
     </div>
