@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card'
 import { Badge } from './ui/badge'
-import { ClipboardList, Search, GitBranch, Ticket, ArrowRight } from 'lucide-react'
+import { Inbox, Zap, Wrench, PackageCheck, ArrowRight } from 'lucide-react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -10,31 +10,31 @@ gsap.registerPlugin(ScrollTrigger)
 const workflowSteps = [
     {
         id: 1,
-        icon: ClipboardList,
-        title: 'Reception',
-        description: 'User reports hardware or software issue at our reception desk',
+        icon: Inbox,
+        title: 'Drop Off or Mail In',
+        description: 'Bring your laptop to our center or ship it to us — we handle it from there.',
         color: 'from-orange-600 to-orange-400',
     },
     {
         id: 2,
-        icon: Search,
-        title: 'Diagnosis',
-        description: 'Expert technicians assess the problem and determine emergency level',
+        icon: Zap,
+        title: 'Instant Diagnosis',
+        description: 'Our experts quickly identify the issue and provide you with a repair estimate.',
         color: 'from-orange-500 to-orange-300',
-        badge: 'Priority Check',
+        badge: 'Fast Turnaround',
     },
     {
         id: 3,
-        icon: GitBranch,
-        title: 'Department Assignment',
-        description: 'Issue is routed to specialized hardware or software department',
+        icon: Wrench,
+        title: 'Expert Repair',
+        description: 'Certified technicians fix your device using quality parts and proven methods.',
         color: 'from-gray-600 to-gray-400',
     },
     {
         id: 4,
-        icon: Ticket,
-        title: 'Ticket Generation',
-        description: 'Comprehensive laptop check performed and service ticket created',
+        icon: PackageCheck,
+        title: 'Quality Check & Pickup',
+        description: 'We test everything thoroughly. Then you pick up or we ship it back — good as new.',
         color: 'from-orange-400 to-orange-200',
     },
 ]
